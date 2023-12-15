@@ -73,15 +73,15 @@ if st.button("ทำนายผล"):
    st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)
 
-   if out[0]=="Setosa":
-      #st.image("./pic/iris.jpg")
-      st.header("Setosa")
-   elif out[0]=="Versicolor":
-      #st.image("./pic/iris2.jpg")
-      st.header("Versicolor")
+   if out[0]=="Sunflower":
+      st.image("./pic/sunflower.jpg")
+      st.header("Sunflower")
+   elif out[0]=="Rose":
+      st.image("./pic/rose.jpg")
+      st.header("Rose")
    else:
-      #st.image("./pic/iris1.jpg")  
-      st.header("Verginiga")
+      st.image("./pic/tulip.jpg")  
+      st.header("Tulip")
    st.button("ไม่ทำนายผล")
 else :
     st.button("ไม่ทำนายผล")  
